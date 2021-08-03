@@ -13,8 +13,8 @@ function Card(props) {
       </div>
       <div className={`subtitle selected`}>{props.data.name}</div>
        <div className='tags are-small is-centered'>
-       <span className={`tag is-primary`}>{`⭐ ${props.data.stargazers_count} stars`}</span>
-      <span className={`tag is-primary`}>{`🍴 ${props.data.forks_count} forks`}</span>
+       <span className={`tag is-warning is-${props.mode}`}>{`⭐ ${props.data.stargazers_count} stars`}</span>
+      <span className={`tag is-warning is-${props.mode}`}>{`🍴 ${props.data.forks_count} forks`}</span>
        </div>
       
     </div>
